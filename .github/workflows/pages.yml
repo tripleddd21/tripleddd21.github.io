@@ -21,7 +21,7 @@ jobs:
           npm install
           npm run build
           JEKYLL_ENV=production bundle exec jekyll build
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-artifact@v4
         with:
           path: './_site'
 
